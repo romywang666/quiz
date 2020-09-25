@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>LIT Drive School Road Test Quiz System</title>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="controller/index_controller.js"></script>
+        <script src="view/index_view.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body class="login_body">
+        <div class="login_tit"><span>Road Test Quiz System</span> </div>
+        <div class="login_wrap">
+
+          <table class="login_table">
+            <tr>
+              <td class = "login_username_label">User Name:</td>
+            </tr>
+            <tr>
+              <td><input id="uname" name="uname" type="text" class="login_input login_user" value="" /></td>
+            </tr>
+            <tr>
+              <td class="login_password_label"> Password:</td>
+            </tr>
+            <tr>
+              <td><input id="upassword" name="upassword" type="password"  class="login_input login_password" value="" /></td>
+            </tr>
+            <tr>
+              <!--<td><input type="submit" value='Submit' class="login_btn" onClick="login_check()"></td> -->
+              <td><input type='button' name='login_check' class='button login_btn' value='Login' onclick='login_check()'/></td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="copyright">Copyright &copy;2018-2020 Romy Wang Technology Ltd.</div>
+    </body>
+</html>

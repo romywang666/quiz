@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel = "stylesheet" type="text/css" href="./css/question.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.params.js"></script>
+        <script src="js/library.js"></script>
+        <script src="controller/question_controller.js"></script>
+        <script src="view/add_question_view.js"></script>
+        <title>Add Question Page</title>
+    </head>
+    <body onload="onload()">
+        <h2 class="admin_h2 ">Add Question</h2>
+        <div class="admin_addquestion_area">
+            <table class='admin_addquestions_table'>
+               <tr>
+                   <td> </td>
+                   <td><a href="javascript:void(0)" onclick="choosePhoto()">Choose File</a>
+                   <input type="file" id="photoFile" accept=".png,gif,.jpg" onchange="showPreview(this)">
+                   </td>
+               </tr>
+               
+               <tr>
+                   <td> </td>
+                   <td><img id="preview_photo" ></td>
+               </tr>
+               
+                <tr>
+                    <td>
+                       <label>Question:</label>
+                    </td>
+                    <td>
+                    <textarea type='text' id='question' name='question'></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Difficulty:</label>
+                    </td>
+                    <td>
+                        <select id="quest_type" name="quest_type">
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                   <td>
+                       <label>Option1:</label>
+                   </td>
+                   <td>
+                       <textarea type='text' id='answer1' name='answer1'></textarea>
+                   </td>
+               </tr>
+                <tr>
+                    <td>
+                        <label>Option2:</label>
+                    </td>
+                    <td>
+                       <textarea type='text' id='answer2' name='answer1'></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Option3:</label>
+                    </td>
+                    <td>
+                       <textarea type='text' id='answer3' name='answer1'></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Option4:</label>
+                    </td>
+                    <td>
+                       <textarea type='text' id='answer4' name='answer1'></textarea>
+                    </td>
+                </tr>
+
+               <tr>
+                   <td>
+                       <label>Answer:</label>
+                   </td>
+                   <td>
+                       <!--<input type='text' id='correct_answer' name='correct_answer'>-->
+                       <select id="correct_answer" name="correct_answer">
+                           <option value="a">a</option>
+                           <option value="b">b</option>
+                           <option value="c">c</option>
+                           <option value="d">d</option>
+                       </select>
+                   </td>
+               </tr>
+               <tr>
+                   <td colspan='2'>
+                       <div class='users_button'>
+                            <span class='question_button' onclick='verifyInput()' > Save </span>
+                            <span class='question_button' onclick='insertCancel()' > Cancel </span>
+                       </div>
+                   </td>
+               </tr>
+            </table>
+        </div>
+
+    </body>
+
+</html>

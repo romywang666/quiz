@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.params.js"></script>
+    <script src="js/library.js"></script>
+    <script src="view/edit_user_view.js"></script>
+    <script src="controller/user_controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/user.css" />
+    <link rel="stylesheet" type="text/css" href="css/NavBar.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+
+    <!-- import layui -->
+    <link rel="stylesheet" href="vendors/layui/css/layui.css">
+    <script src="vendors/layui/layui.js"></script>
+
+    <title>Add User Page</title>
+</head>
+<body onload="onload()">
+    <h2 class="edit_user_h2 ">Edit User</h2>
+    <div class="edit_user_area">
+        <form class="layui-form" id='edit_user_form' action="javascript:void(0);">
+            <div class="layui-form-item">
+                <label class="layui-form-label">User Name:</label>
+                <div class="layui-input-block">
+                    <input type="text" id="user_name" name="user_name" lay-verify="required"
+                       lay-reqtext="User Name required." placeholder="Please input" autocomplete="off"
+                       class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">User Role:</label>
+                <div class="layui-input-block">
+                    <select id="user_level" name="user_level" lay-filter="">
+                        <option value=""></option>
+                        <option value="ADMIN">ADMIN</option>
+                        <option value="TESTER" selected="">TESTER</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">First Name:</label>
+                <div class="layui-input-block">
+                    <input type="text" id="first_name" name="first_name" lay-verify="" autocomplete="off"
+                       placeholder="Please input first name" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">Last Name:</label>
+                <div class="layui-input-block">
+                    <input type="text" id="last_name" name="last_name" lay-verify="" autocomplete="off"
+                           placeholder="Please input last name" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item" pane="">
+                <label class="layui-form-label">Sex:</label>
+                <div class="layui-input-block">
+                    <input type="radio" id="sex1" name="sex" value="Male" title="Male" checked="">
+                    <input type="radio" id="sex2" name="sex" value="Female" title="Female">
+                    <!--<input type="radio" name="sex" value="" title="禁用" disabled="">-->
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">Birth Date:</label>
+                    <div class="layui-input-block">
+                        <input type="text" id="birth_date" name="birth_date" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">Email:</label>
+                <div class="layui-input-block">
+                    <input type="text" id="email" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">Phone No:</label>
+                <div class="layui-input-block">
+                    <input type="tel" id="phone_no" name="phone_no" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">Address:</label>
+                <div class="layui-input-block">
+                    <input type="text" id="address" name="address" lay-verify="" autocomplete="off"
+                           placeholder="Please input address" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button type="submit" class="layui-btn" lay-submit="" lay-filter="update_user" >Submit</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">Reset</button>
+                    <button type="button" class="layui-btn layui-btn-primary" onclick="editCancel()">Cancel</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

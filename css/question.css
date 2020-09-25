@@ -1,0 +1,99 @@
+.admin_h2 {
+    margin:20px auto;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color:#9e5e26;
+}
+
+img {
+    width: 400px;
+    height:200px;
+}
+
+.question_button {
+    display: inline-block;
+    padding:4px 16px;
+    margin-left:40px;
+    background-color:#9e5e26;
+    color:#fffbfb;
+    border-radius:11px;
+    font-size:15px;
+    text-align: center;
+    cursor: pointer;
+    width:70px;
+    height: 20px;
+}
+
+.adminquestion_area{
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+
+.adminquestion_area table{
+    border-collapse: collapse;
+}
+
+.adminquestion_area th{
+    border:1px solid #ccccff;
+    padding: 5px;
+    background-color: rgba(203, 156, 78, 0.66);
+}
+
+.adminquestion_area td{
+    text-align: left;
+    border:1px solid #ccccff;
+    padding: 5px;
+    /*  text-align: center; */
+    background-color: #ffffdf;
+    max-width: 400px;
+}
+
+.admin_addquestion_area {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+.admin_editquestion_area {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+
+table.admin_addquestions_table {
+    border-collapse:separate;
+    border-spacing:10px 20px;
+}
+
+.admin_addquestions_table tr td input{
+    background-color: #fffbfb;
+    width: 300px;
+    font-size: 120%;
+}
+
+.admin_addquestions_table tr td textarea {
+    font-size: inherit;
+    background-color: #ffffff;
+    width: 800px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+.admin_addquestions_table tr td input:hover,.admin_addquestions_table tr td textarea:hover{
+    background-color: #ffffdf;
+}
+
+.admin_addquestions_table tr td textarea{
+    height:40px;
+}
+.admin_editquestions_table tr td input{
+    font-size:inherit;
+    background-color:#fffbfb ;
+    width: 400px;
+    height:40px;
+    padding: 7px auto;
+}
+
+#photoFile{
+    display:none;
+}

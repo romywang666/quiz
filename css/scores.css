@@ -1,0 +1,9 @@
+.user_quiz_scores_area {
+    display: block;
+    margin-top: 40px;
+
+}
+
+#score {
+    color:red;
+}

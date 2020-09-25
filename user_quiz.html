@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="view/user_quiz_view.js"></script>
+    <script src="controller/user_quiz_controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/user_quiz.css" />
+    <title>Student Examination</title>
+
+</head>
+ 
+<body onload="onload()">
+    <div class="container">
+        <div id="block_start">
+            <a type="button" id ="start_btn"    onclick="startTest()">Start Test</a>
+            <p id="start_hint">You have 30 minutes to finish the test. Please make sure to submit your test ahead of deadline or you will lost your test.</p>
+            <div id="loading">
+                <img src="./img/loding.gif" alt="" />
+            </div>
+        </div>
+
+        <div id="action_header_btn">
+            <!--<a type="button" class ="back_btn"    onclick="getPrevious()">Back</a>
+            <a type="button" class ="next_btn"    onclick="getNext()">Next</a>
+            <a type='button' class ="submit_btn"  onclick="submit_quiz()" id='submit_btn2'>Submit</a>-->
+            <a type="button" class ="timing_btn"  id="timing_btn" >00:00</a>
+
+            <a type='button' class ="logout_btn"  onclick="logoutQuiz()">Logout</a>
+        </div>
+
+        <div id="block_quiz">
+            <div id="question_title">
+                <p>Question  3</p>
+            </div>
+            <div class="question_detail">
+                <img id="question_photo">
+
+                <p id="question">question detail here ...  </p>
+
+                <div class ="answer">
+                    <label><input type='radio' name="answers" value="a" onclick="answersClick(this)" /><span id="answers_a" >answer 1</span></label>
+                    <label><input type='radio' name="answers" value="b" onclick="answersClick(this)" /><span id="answers_b" >answer 2</span></label>
+                    <label><input type='radio' name="answers" value="c" onclick="answersClick(this)" /><span id="answers_c" >answer 3</span></label>
+                    <label><input type='radio' name="answers" value="d" onclick="answersClick(this)" /><span id="answers_d" >answer 4</span></label>
+                </div>
+            </div>
+
+            <div class="action_footer_btn">
+                <a type="button" class ="back_btn"    onclick="getPrevious()">Back</a>
+                <a type="button" class ="next_btn"    onclick="getNext()">Next</a>
+                <a type='button' class ="submit_btn"  onclick="submit_quiz()" id='submit_btn1'>Submit</a>
+            </div>
+        </div>
+
+        <div id="block_score">
+            <p id="score_hint">Your Test Result:</p>
+            <progress max="100" value="0" id="pg"></progress>
+            <!--<div class="progress progress-striped">
+                <div id = "score_progress_bar" class="progress-bar progress-bar-warning" role="progressbar" >
+                    <span class="sr-only"></span>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+</body>
+
+</html>

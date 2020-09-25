@@ -1,0 +1,219 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+#block_start {
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+#start_btn{
+    text-align: center;
+    cursor: pointer;
+    color:#9e5e26;
+    font-size:60px;
+    display:block;
+}
+#start_hint{
+    text-align: center;
+    color:#9e5e26;
+    font-size:32px;
+    display:block;
+}
+#loading{
+    display:none;
+    text-align: center;
+}
+#loading img{
+    height: 64px;
+    width:  64px;
+    margin-top: 30px;
+}
+
+#action_header_btn{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display:none;
+}
+
+#block_quiz{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display:none;
+}
+
+.block_logout {
+    width: 100%;
+    height: 100%;
+}
+
+#question_title{
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    color:#9e5e26;
+    font-size:32px;
+}
+
+img {
+    width: 400px;
+    height:200px;
+}
+
+#question{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    color:#9e5e26;
+    font-size:32px;
+}
+.answer{
+    color:#9e5e26;
+    font-size:24px;
+}
+.answer label{
+    display:block;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.answer span{
+    margin-left: 10px;
+}
+
+.action_header_btn {
+    margin-top: 30px;
+    width:100%;
+    height: 50px;
+}
+
+.action_footer_btn {
+    margin-top: 30px;
+
+}
+
+.back_btn, .next_btn, .submit_btn, .timing_btn, .logout_btn {
+    padding:4px 16px;
+    background-color:#9e5e26;
+    border-radius:11px;
+    text-align: center;
+    cursor: pointer;
+    display:inline-block;
+    width:70px;
+    color:#ffffff;
+}
+
+.back_btn{
+    margin-left: 0px;
+    letter-spacing: 2px;
+}
+.next_btn{
+    margin-left: 30px;
+    letter-spacing: 2px;
+}
+.submit_btn{
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+.timing_btn{
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+
+
+.logout_btn{
+    float: right;
+    letter-spacing: 1px;
+}
+
+.questions_title{
+    display: block;
+    color:#9e5e26;
+    margin: 0px auto;
+
+}
+.questions label{
+    font-size: 40px;
+}
+
+
+p.question{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.question_answer input{
+    margin-top: 20px;
+    font-size:25px ;
+}
+
+.quizArea {
+    max-width: 70%;
+    margin: 30px auto ;
+
+}
+
+.user_quiz_bottom{
+    max-width: 70%;
+    font-size:15px;
+    color:#fffbfb;
+}
+
+a.user_quiz_logout_btn, a.quiz_next_btn, a.user_quiz_submit_btn {
+    display:block;
+    padding:4px 16px;
+    margin-left:40px;
+    background-color:#9e5e26;
+    border-radius:11px;
+    text-align: center;
+    cursor: pointer;
+    width:70px;
+    height: 30px;
+    color:#ffffff;
+}
+
+a.user_quiz_logout_btn:hover, a.quiz_next_btn:hover, a.user_quiz_submit_btn:hover{
+    background-color: #c58028;
+    display:block;
+    opacity:50%;
+}
+
+
+#block_score{
+    width: 70%;
+    height: 50%;
+    margin: 30px auto;
+    color:#9e5e26;
+    font-size:32px;
+    display:none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*在Chrome浏览器中 ::-webkit-progress-bar 全部进度 ::-webkit-progress-value 已完成进度 通过这两个伪元素为其添加样式。*/
+/*IE10，这两个伪元素不起作用，直接用color样式可以修改已完成进度的颜色，而全部进度为background */
+/*FireFox中progress-bar为已完成进度，background为全部进度,而Opera中对这个样式只能为浏览器默认样式。*/
+#pg{
+    /*background:#889E6E;*/
+    color:#889E6E; /*兼容IE10的已完成进度背景*/
+    background:#d7d7d7;
+    border-radius: 8px;
+}
+#pg::-webkit-progress-bar
+{
+    background-color:#d7d7d7;
+}
+#pg::-webkit-progress-value,
+#pg::-moz-progress-bar
+{
+    background-color:#889E6E;
+}
+
+

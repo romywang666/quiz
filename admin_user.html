@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/library.js"></script>
+    <script src="view/admin_user_view.js"></script>
+    <script src="controller/user_controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/user.css" />
+    <link rel="stylesheet" type="text/css" href="css/NavBar.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+
+    <!-- import layui -->
+    <link rel="stylesheet" href="vendors/layui/css/layui.css">
+    <script src="vendors/layui/layui.js"></script>
+
+    <title> User Management Page</title>
+</head>
+ 
+<body onload="onload()">
+   <ul id="navbar">
+       <li><a href="admin.html">Home</a></li>
+       <li><a href="admin.html">Questions</a></li>
+       <li><a href="admin_user.html">Users</a></li>
+       <li><a href="index.html">Logout</a></li>
+   </ul>
+
+   <!--
+   <div class="admin_nav">
+        <div class="admin_user">
+            <a href="admin_user.html">User Managment</a>
+        </div>
+        <div class="admin_score">
+            <a href="scores.html">Users Scores</a>
+        </div>
+        <div class="admin_LogOut">
+            <a href="index.html">Log Out</a>
+        </div>
+    </div>
+   -->
+
+   <h2 class="admin_h2">Users Management</h2>
+
+   <div class="admin_users_area">
+
+       <table class="layui-hide" id="users_table" lay-filter="users_table"></table>
+
+       <script type="text/html" id="users_table_toolbar">
+           <div class="layui-btn-container">
+               <button class="layui-btn layui-btn-sm" lay-event="getCheckData">Delete Selected Rows</button>
+               <!--<button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
+               <button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>-->
+
+               <!--<button class="layui-btn layui-btn-sm" href="./add_question.html" >Add Question</button>-->
+               <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">Add User</button>
+           </div>
+       </script>
+
+       <script type="text/html" id="Operation_bar">
+           <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">Detail</a>
+           <a class="layui-btn layui-btn-xs" lay-event="edit">Edit</a>
+           <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">Del</a>
+       </script>
+
+
+   </div>
+
+   <!--
+    <div class='admin_addquestion_button'>
+        <a id='admin_addquestion_button' href="./add_question.html" > Add Question </a>
+    </div>
+    -->
+    
+    <!-- <div class="admin_addquestion_area"></div>  -->
+    <!-- <div class="admin_editquestion_area"></div>  -->
+
+</body>
+</html>
+

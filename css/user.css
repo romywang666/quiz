@@ -1,0 +1,66 @@
+/************************
+** USER MANAGEMENT AREA**
+*************************/
+.admin_users_area{
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+
+.admin_h2{
+    margin:20px auto;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color:#9e5e26;
+}
+
+.admin_users_area th{
+    border:1px solid #ccccff;
+    padding: 5px;
+    background-color: rgba(203, 156, 78, 0.66);
+}
+.admin_users_area td{
+    text-align: left;
+    border:1px solid #ccccff;
+    padding: 5px;
+    background-color: #ffffdf;
+    max-width: 400px;
+}
+
+
+.add_user_area {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+.add_user_h2 {
+    margin:20px auto;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color:#9e5e26;
+}
+.add_user_area .layui-input-block{
+    font-size:inherit;
+    background-color:#fffbfb ;
+}
+
+
+
+.edit_user_area {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+.edit_user_h2 {
+    margin:20px auto;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color:#9e5e26;
+}
+.edit_user_area .layui-input-block{
+    font-size:inherit;
+    background-color:#fffbfb ;
+}
